@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "rsymsol.h"
+#include "rsymsol.h"
 #include "arrssym.h"
 #include <fstream>
 #include <cstdlib>

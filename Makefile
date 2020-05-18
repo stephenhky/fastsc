@@ -1,6 +1,6 @@
 CUDA_CPP = nvcc
 CUDA_ARCH ?= sm_35
-include ../arpackpp/Makefile.inc
+include ./BiowulfMakefile.inc
 CUDA_FLAGS = -arch=$(CUDA_ARCH) -Xptxas -v
 CUDA_LIBS = -lcublas -lcusparse
 
