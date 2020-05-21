@@ -62,8 +62,8 @@ void regular_labels(thrust::device_vector<int>& labels, int n, int k) {
 }
 
 int main(int argc, char* argv[]) {
-	cublasHandle_t handle;
-	cublasStatus_t stat = cublasCreate(&handle);
+	cublasHandle_t inithandle;
+	cublasStatus_t stat = cublasCreate(&inithandle);
 	if (stat != CUBLAS_STATUS_SUCCESS) {
         printf ("CUBLAS initialization failed\n");
         exit(1);
