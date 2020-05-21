@@ -65,6 +65,7 @@ int main(int argc, char* argv[]) {
 	cublasHandle_t inithandle;
 	cublasStatus_t stat = cublasCreate(&inithandle);
 	if (stat != CUBLAS_STATUS_SUCCESS) {
+        printf ("Initial environment check\n")
         printf ("CUBLAS initialization failed\n");
         exit(1);
     }
