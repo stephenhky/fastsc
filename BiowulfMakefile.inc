@@ -94,7 +94,8 @@ CPP_FLAGS    = $(CPP_DEBUG) -D$(PLAT) -I$(ARPACKPP_INC) -I$(CPP_INC) \
 # Putting all libraries together.
 
 ALL_LIBS     = $(CPP_LIBS) $(ARPACK_LIB) \
-               $(BLAS_LIB) $(LAPACK_LIB) $(FORTRAN_LIBS)
+               $(BLAS_LIB) $(LAPACK_LIB) $(FORTRAN_LIBS) \
+
 
 # defining paths.
 
