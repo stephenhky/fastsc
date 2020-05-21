@@ -62,6 +62,13 @@ void regular_labels(thrust::device_vector<int>& labels, int n, int k) {
 }
 
 int main(int argc, char* argv[]) {
+	cublasHandle_t handle;
+	cublasStatus_t stat = cublasCreate(&handle);
+	if (stat != CUBLAS_STATUS_SUCCESS) {
+        printf ("CUBLAS initialization failed\n");
+        exit(1);
+    }
+
 	if(argc < 5) {
 		cout<<"Not enough input arguments!"<<endl;
 		cout<<"The input format is: " <<endl;
