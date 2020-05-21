@@ -22,8 +22,8 @@ CPP          = g++
 #ARPACKPP_DIR = ../../..
 ARPACKPP_DIR = $(HOME)/installing/arpackpp
 ARPACKPP_INC = $(ARPACKPP_DIR)/include
-#SUPERLU_DIR  = $(ARPACKPP_INC)
-SUPERLU_DIR  = $(ARPACKPP_DIR)/external/SuperLU
+SUPERLU_DIR  = $(ARPACKPP_INC)
+#SUPERLU_DIR  = $(ARPACKPP_DIR)/external/SuperLU
 UMFPACK_DIR  = $(ARPACKPP_INC)
 
 
